@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer | Vince Arnedo</title>
+    <!-- <link rel="stylesheet" href="Navbar A.css"> -->
+    <link rel="stylesheet" href="css/ResponsiveNavbar.css">
+    <link rel="stylesheet" href="css/intro2.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/card_style.css">
+    <link rel="stylesheet" href="css/toggleShow.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="css/phone1.css">
+
+
+
+
+    <style>
+      
+      :root {
+        --dominant_color: white;
+        --complimentary_color: #20a1dc;
+        --accent_color: #FFD500; 
+        /* --accent_color:  #FFDA75; */
+        --typeface_color1: black;
+        --typeface_color2: black;
+      }
+
+
+            *{
+                margin: 0;
+                padding: 0;
+            
+          
+            }
+            html{
+                scroll-behavior: smooth;
+                /* background-color: var(--complimentary_color); */
+                /* background-image: linear-gradient(to left, rgb(5, 117, 230), rgb(2, 27, 121)); */
+                /* background-image: linear-gradient(to right bottom, #0f3259, #17497b, #1b619f, #1b7bc4, #1296eb); */
+                background-image: white;
+
+            }
+
+            @media (max-width: 800px) {
+                html{
+                    background-image: linear-gradient(to left top, #1296eb, #1b7ec9, #1d67a8, #1a5288, #143d69);
+                }
+            }
+      
+          .about h1{
+              font-size: 33px;
+              padding-bottom: 12px;
+              /* color: var(--accent_color); */
+              color: var(--accent_color);
+          }
+      
+          .about{
+              width: 100%;
+              /* width: 100vw; */
+              height: 100vh;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              /* background-color: var(--complimentary_color); */
+              /* color: white; */
+              color: white;
+              /* color: var(--accent_color) */
+              /* padding-left: 10%; */
+              /* padding-top: 10%; */
+              margin-top: 0;
+
+              /* background-image: linear-gradient(to left, rgb(5, 117, 230), rgb(2, 27, 121)); */
+              /* background-image: linear-gradient(to bottom, #02baecd2 0%, #005bea 100%); */
+              /* background-image: linear-gradient(to right top, #0f3259, #17497b, #1b619f, #1b7bc4, #1296eb); */
+              /* background-image: linear-gradient(to right bottom, #0f3259, #17497b, #1b619f, #1b7bc4, #1296eb); */
+              background-image: linear-gradient(to right bottom, #143d69, #1a5288, #1d67a8, #1b7ec9, #1296eb);
+          
+            }
+      
+      
+      
+      
+          .container {
+              width: 30%;
+              height: 50%;
+              /* background-color: red; */
+      
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin:auto;
+
+              padding-left: 10px;
+          }
+      
+      
+          .circle {
+              position: relative;
+              width: 80%;
+              height: 0%;
+              padding: 80% 0 0;
+              border-radius: 50%;
+              overflow: hidden;
+              /* border: 2px solid yellow; */
+
+              background-color: white;
+              text-align: center;
+      
+          }
+      
+          .circle img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right:5px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+
+             
+          }
+      
+      
+          .introduction{
+              padding-top: 10px;
+              margin-top: 0px;
+              padding-right: 5%;
+              padding-left: 5%;
+              width: 100%;
+              /* width: 70%; */
+              /* background-color: cadetblue; */
+          }
+      
+          .introduction bold{
+              font-size: 1.6rem;
+              /* color:var(--accent_color); */
+          }
+      
+          .introduction p{
+              font-size: 1.2rem;
+          }
+      
+      
+          @media all and (max-width: 768px) {
+              .about {
+                  width: 100%;
+                  flex-direction: column;
+                  /* margin-top:8px; */
+
+                  margin-top:38px;
+                  
+              }
+      
+              .container{
+                  margin-top: 2%;
+                  margin-right: 5%;
+                  margin-left: 5%;
+                  width:100%;
+                  height: 60%;
+              }
+      
+              .circle{
+                  width: 60%;
+                  /* padding: 90% 0 0; */
+                  padding: 60% 0 0;
+              }
+      
+              .circle img {
+                  width: 100%;
+                  height: 100%;
+
+
+              }
+      
+              .about h1{
+                  padding-bottom: 0;
+                  font-size: 20px;
+              }
+      
+      
+              .introduction{
+                  padding-top: 0px;
+                  margin-top: 0px;
+                  padding-right: 5%;
+                  padding-left: 5%;
+                  width: 100%;
+                  height: 100%;
+              }
+      
+              .introduction bold{
+                  font-size: 1rem;
+                  /* color:orange; */
+              }
+      
+              .introduction p{
+                  font-size: 0.8rem;
+              }
+      
+          }
+
+
+          .sticky {
+                position: fixed;
+                /* position: absolute; */
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+      </style>
+</head>
+<body>
+
+      <!-- Navbar-->
+      <nav id="navbar" class="navbar">
+        <div class="brand-title">Vince Arnedo</div>
+        <a href="#" class="toggle-button"  onclick="toggleNB2()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+      </nav>
+
+      <div class="navbar-links2">
+        <ul>
+          <li onclick="closeNB2()"><a href="#projects">Projects</a></li>
+          <li onclick="closeNB2()"><a href="#about">About</a></li>
+          <li onclick="closeNB2()"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="circle">
+                <!-- <img src="Images/hahaha.jpg" /> -->
+                <img src="Images/hahahaha2.png" />
+              </div>
+        </div>
+        
+        
+        <div class="introduction">
+            </br>
+            <h1>Facilis descensus averno Non Est Ad Astra Mollis E Terris via</h1>
+        </br>
+            <p>Lorem ipsum , I'm <span><bold> Vince Mark E. Arnedo</bold></span> amet consectetur adipisicing elit. Aliquid hic aperiam ad quae, quia officia sit. Officiis qui deserunt iure eaque hic illum expedita, ratione repellat molestias atque iste velit, delectus ut magni sit ab ducimus dolore nobis</p>
+                </br></br>
+
+        </div>
+    </div>
+      <!-- Introduction-->
+
+       <!-- SKILLS-->
+       <div id="skills" class="skills_section">
+           <h1>SKILLS</h1>
+       </br>
+                <div class="itemA skills">
+                    <ul>
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            
+
+                <div class="itemB skills">
+                    <ul>
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <h3>Chu chu</h3>
+                            <span class="xpbar">
+                                <span id="html"></span>
+                            </span>
+                        </li>
+                
+                    </ul>
+                </div>
+        
+    
+                
+        
+        
+    </div>
+       <!-- SKILLS-->
+      <!-- Projects-->
+      <!-- PORTFOLIO--> 
+
+<div id="projects" class="portfolio">
+    <h1>PROJECTS</h1>
+    <div class="cards">
+        <div class="card">
+            <!-- <img src="Images/SJ.JPG" alt=""> -->
+            <div class="content">
+                <h2>Guidance Information System</h2>
+                <img src="Images/JHGIS.JPG" alt="">
+                <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+                <!-- <a href="#" class="button">Read More</a> -->
+              </div>
+
+        </div>
+        <!-- -->
+
+        <div class="card">
+          <!-- <img src="Images/SJ.JPG" alt=""> -->
+          <div class="content">
+              <h2>Pizza House Customer Service</h2>
+              <img src="Images/PizzaHouse.JPG" alt="">
+              <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+              <!-- <a href="#" class="button">Read More</a> -->
+            </div>
+
+      </div>
+      <!-- -->
+
+      <div class="card">
+        <!-- <img src="Images/SJ.JPG" alt=""> -->
+        <div class="content">
+            <h2>Personal Productivity Tracker</h2>
+            <img src="Images/HT.JPG" alt="">
+            <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+            <!-- <a href="#" class="button">Read More</a> -->
+          </div>
+
+    </div>
+    <!-- -->
+
+    <div class="card">
+      <!-- <img src="Images/SJ.JPG" alt=""> -->
+      <div class="content">
+          <h2>Taj Hotel Management</h2>
+          <img src="Images/TajHome.JPG" alt="">
+          <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+          <!-- <a href="#" class="button">Read More</a> -->
+        </div>
+
+  </div>
+  <!-- -->
+
+  <div class="card">
+    <!-- <img src="Images/SJ.JPG" alt=""> -->
+    <div class="content">
+        <h2>S&J Inventory</h2>
+        <img src="Images/SJ.JPG" alt="">
+        <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+
+</div>
+<!-- -->
+
+<div class="card">
+  <!-- <img src="Images/SJ.JPG" alt=""> -->
+  <div class="content">
+      <h2>Google Drive Clone</h2>
+      <img src="Images/DriveClone.JPG" alt="">
+      <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+      <!-- <a href="#" class="button">Read More</a> -->
+    </div>
+
+</div>
+<!-- -->
+
+
+<div class="card">
+    <!-- <img src="Images/SJ.JPG" alt=""> -->
+    <div class="content">
+        <h2>Code Pen</h2>
+        <img src="Images/Code Pen.PNG" alt="">
+        <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+  
+  </div>
+  <!-- -->
+
+  <div class="card">
+    <!-- <img src="Images/SJ.JPG" alt=""> -->
+    <div class="content">
+        <h2>Photo Editor</h2>
+        <img src="Images/photoeditor.PNG" alt="">
+        <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+  
+  </div>
+  <!-- -->
+
+  <div class="card">
+    <!-- <img src="Images/SJ.JPG" alt=""> -->
+    <div class="content">
+        <h2>Flashcard Quiz</h2>
+        <img src="Images/flashcard2.PNG" alt="">
+        <p>Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid, recusandae autem ipsum accusantium, itaque aliquam laborum est quidem facere culpa, atque a numquam neque fugiat delectus. Dicta inventore molestiae ipsa hic vero explicabo temporibus dolores fuga voluptatibus. </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+  
+  </div>
+  <!-- -->
+
+    </div><!-- Cards-->
+  </div>
+
+
+  <!-- PORTFOLIO-->
+      <!-- Projects-->
+
+      <!-- About Me-->
+      <div id="about" class="about_me">
+        <h1>ABOUT VINCE</h1>
+        <div class="toggleArea" onclick="showOrHideDiv()">
+            <!-- <img src="Images/toggle.png"> -->
+            <h2 class="toggle"><img id="toggleImage" src="Images/toggle.png">   Education</h2>
+        </div>
+        <div id="showOrHide" class="about_content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid hic aperiam ad quae, quia officia sit. Officiis qui deserunt iure eaque hic illum expedita, ratione repellat molestias atque iste velit, delectus ut magni sit ab ducimus dolore nobis, eius ullam eveniet? Quam, at adipisci quae delectus quia eveniet officia. Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid
+        
+        
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+        </div>
+        
+        <div class="toggleArea" onclick="showOrHideDiv2()">
+            <!-- <img src="Images/toggle.png"> -->
+            <h2 class="toggle"><img id="toggleImage2" src="Images/toggle.png">   Work Experience</h2>
+        </div>
+        <div id="showOrHide2" class="about_content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid hic aperiam ad quae, quia officia sit. Officiis qui deserunt iure eaque hic illum expedita, ratione repellat molestias atque iste velit, delectus ut magni sit ab ducimus dolore nobis, eius ullam eveniet? Quam, at adipisci quae delectus quia eveniet officia. Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid
+        
+        
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+        </div>
+    
+    
+        <div class="toggleArea" onclick="showOrHideDiv3()">
+            <!-- <img src="Images/toggle.png"> -->
+            <h2 class="toggle"><img id="toggleImage3" src="Images/toggle.png">   Personal</h2>
+        </div>
+        <div id="showOrHide3" class="about_content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid hic aperiam ad quae, quia officia sit. Officiis qui deserunt iure eaque hic illum expedita, ratione repellat molestias atque iste velit, delectus ut magni sit ab ducimus dolore nobis, eius ullam eveniet? Quam, at adipisci quae delectus quia eveniet officia. Quam iusto tenetur blanditiis dolores eos doloribus, odio numquam architecto alias amet consequatur, quae eius corporis, officiis fugit temporibus reiciendis. Beatae nobis molestias tempore omnis consequuntur hic qui ducimus iure nostrum. Aperiam ab magnam sit iusto excepturi perferendis aliquid
+        
+        
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+        </div>
+    </div>
+    
+    
+      <!-- About Me-->
+
+      <!-- Contact-->
+      <!-- <section id="contact"> -->
+<div id="contact" class="contact">
+  <h1>CONTACT</h1>
+  <form action="" class="form">
+      <div class="inputs">
+          <input type="text" name="name" class="input" placeholder="Enter Your Name">
+          <input type="email" name="email" class="input" placeholder="Enter Your Email">
+      </div>
+      <!-- <input type="text" name="name" class="input" placeholder="Enter Your Name">
+      <input type="email" name="email" class="input" placeholder="Enter Your Email"> -->
+      <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
+      <input type="submit" value="Send" id="submit">
+  </form>
+
+  <div class="connect">
+      <!-- <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-github-alt fa-2x"></i> -->
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vincemarkarn@gmail.com"  target="_blank"><img src="media/gmail(1).svg" class="img-link"></a>
+              <a href="https://www.linkedin.com/in/vince-mark-arnedo/"  target="_blank"><img src="media/linkedin(1).svg"  class="img-link"></a>
+              <a href="file/Vince Mark E - Copy.pdf" download><img src="media/folder(1).svg"  class="img-link"></a>
+              <a href="https://github.com/VinceMarkArnedo"><img src="media/github(3).svg"  class="img-link"></a>
+
+              <!-- <a class="fas fa-hashtag" style="height:26px;">09369230607</a> -->
+              
+  </div>
+</div>
+      <!-- Contact-->
+
+
+</body>
+</html>
+
+
+<!-- Script-->
+<script  type="text/javascript" src="script.js"></script>
+<!-- Script-->

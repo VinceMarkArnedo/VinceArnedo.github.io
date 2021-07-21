@@ -1,0 +1,183 @@
+/* Black and Pink */
+/* :root {
+  --dominant_color: #0b0c10;
+  --complimentary_color: white;
+  --accent_color: #f1356d; 
+} */
+/* var(--dominant_color) */
+/* var(--accent_color) */
+
+/* :root { Hacker Hero
+    --dominant_color: #1b1d21;
+    --complimentary_color: white;
+    --accent_color: #37d261; 
+  } */
+
+  :root { 
+    --dominant_color: #1b1d21;
+    --complimentary_color: white;
+    --accent_color: #28a745; 
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* About Section */
+/* #about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 100vh;
+    width: 100vw;
+    padding-right: 4%;
+    padding-bottom: 10%;
+} */
+
+.about h1{
+    /* color: var(--accent_color); */
+    color:#f1356d;
+    font-size: 33px;
+    padding-bottom: 12px;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+    justify-content: start;
+    /* align-items: flex-start; */
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-left: 100px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+
+    background-color: red;
+}
+
+
+.profpic{
+    display: flex;
+    flex-shrink: 2;
+    height: 300px;
+    width: 25%;
+    padding: 0px 20px;
+    padding-top: 0px;
+    padding-right: 100px;
+    margin-top: 0px;
+    /* background-image: url('hahaha.jpg');
+    background-size: 100% 100%; */
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.profpic img{
+    min-width:100%;
+    min-height:80%;
+    width:auto;
+    height:auto;
+    /* max-width:auto;
+    max-height:auto; */
+    /* object-fit: contain; */
+
+    
+    border-radius: 50%;
+}
+
+.introduction{
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-right: 44px;
+    padding-left: 54px;
+    width: 76%;
+
+    background-color: cadetblue;
+}
+.introduction bold{
+    font-size: 1.8rem;
+    color:var(--accent_color);
+}
+.introduction p{
+    font-size: 1.2rem;
+}
+
+@media all and (max-width: 768px) {
+    #about{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .about{
+        padding-top: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        
+
+    }
+
+    .profpic{
+        display: flex;
+        width: 80%;
+        height: 80%;
+        padding: 5% 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+
+        text-align: center;
+        /* background-image: url('hahaha.jpg');
+        background-size: 100% 100%; */
+    }
+
+    .profpic img{
+        object-fit: fill;
+        min-width:100%;
+        min-height:100%;
+        max-width:auto;
+        max-height:auto;
+
+    }
+
+    #about h1 {
+        /* background-color: yellow; */
+        font-size: 18px;
+      }
+
+    .introduction{
+        padding-right: 0px;
+        padding-left: 0px;
+        /* width: 60%; */
+        height: 50%;
+    }
+
+    .introduction h1{
+        background-color: yellow;
+        font-size: 1.1rem;
+    }
+
+    .introduction p {
+      /* background-color: red; */
+      font-size: 0.9rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .introduction bold{
+        font-size: 1.1rem;
+    }
+
+  } 
+

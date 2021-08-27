@@ -15,7 +15,8 @@
     width:100%;
     padding-bottom: 10px;
 
-    background-color: white;
+    /* margin-left: ; */
+    background-color: brown;
 }
 
 .skills_section ul li {
@@ -30,7 +31,7 @@
     /* margin: 8px 0 0 0; */
     margin-left: 5%;
     margin-right: 10%;
-    /* background-color: yellowgreen; */
+    background-color: yellowgreen;
     width: 80%;
 
     align-items: center; 
@@ -41,18 +42,19 @@
 
 .skills ul {
     list-style-type: disc;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     padding-left: 5%;
     padding-bottom: 5%;
     list-style-position: outside;
     line-height: 1.6;
 
     width: 80%;
-    /* background-color: burlywood; */
+    background-color: burlywood;
 }
 
 .skills h3{
-    margin-top: 12px;
+    margin: 60px;
+    /* margin-top: 12px; */
     margin-bottom: 12px;
 }
 
